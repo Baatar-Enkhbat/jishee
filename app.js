@@ -1,10 +1,15 @@
 function pressed() {
-    var text = parseInt(document.getElementById("inp").value);
+    var text = document.getElementById("inp").value;
     var output = document.getElementById("output");
 
-    if (text >= 30) {
-        output.innerHTML = "Зөнз үхэх гэж байгаа сда байнашд";
+
+    if (text == "нохой") {
+        output.innerHTML = "таажинэ таажинэ";
+    } else if (text == "шоргоолж") {
+        output.innerHTML = "вааав л даа";
+    } else if (text == "бамбархүү") {
+        output.innerHTML = "сүгои нээ үмаэ";
     } else {
-        output.innerHTML = "Мангар бацаан минь явж ажлаа хий";
+        output.innerHTML = "эээээээээээээээ юу вэ :(";
     }
 }
